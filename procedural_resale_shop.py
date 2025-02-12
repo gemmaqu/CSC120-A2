@@ -52,7 +52,7 @@ def print_inventory():
         # For each item
         for item in inventory:
             # Print its details
-            print(f'Item ID: {inventory.index(item)} : {item}')
+            print(f'Item ID: {inventory.index(item)} : {item.price}')
     else:
         print("No inventory to display.")
 
