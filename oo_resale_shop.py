@@ -34,7 +34,7 @@ class ResaleShop:
             print("Computer", item_id, "not found. Cannot update price.")
     
     def sell(self,item_id: int):
-        if self.inventory[item_id] is not None:
+        if item_id not in self.inventory:
             self.inventory.pop(item_id)
             print("Computer", item_id, "sold!")
         else: 
